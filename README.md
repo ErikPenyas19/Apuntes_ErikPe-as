@@ -97,14 +97,14 @@ lang='es' : Lenguaje en español
 
 meta charset='UTF-8': Configuración para mostrar carácteres de un lenguaje, es decir, UTF-8 sirve para carácteres de español como la 'ñ'
 
-##Atributs Core
+## Atributs Core
 
 - **id**: Identifica el elemento. No puede haber dos elementos en un mismo documento con el mismo id.
 - **class**: Sirve para asociar un elemento a una clase. Más de un elemento puede estar en una misma clase.
 - **styles**: Se usa para definir el estilo del elemento.
 - **title**: Se usa para poner un texto con una breve información del elemento. Muchos navegadores muestran este texto cuando se pasa por encima del elemento.
 
-#CSS
+# CSS
 
 Para crear un archivo CSS es importante crearlo con un nombre que sea **styles.css** o **estilos.css**. Este archivo funciona como un elemento _style_, en el que podremos modificar la forma en la que se verá nuestra página web.
 
@@ -120,16 +120,16 @@ Para poder modificar cómo deseamos debemos tener en cuenta la siguiente tabla:
 | *** | * | Selecciona **TODOS** los elementos |
 | *elemento<elemento2* | p<div | Selecciona los elementos _p_ que son hijos directos de un _div_ |
 
-##Atributos 
+## Atributos 
 
-- _**margin**_: 
-- _**padding**_: 
-- _**text-align**_: 
-- _**text-justify**_: 
-- _**border-radius**_: 
-- _**text-decoration**_: 
+- _**margin**_: Decidir el margen
+- _**padding**_: Decidir el relleno
+- _**text-align**_: Alinear el texto
+- _**text-justify**_: Justificar el texto
+- _**text-decoration**_: Decorar el texto
+- _**border-radius**_: Marcar las esquinas con curvas
 - _**size**_: Ajustar el tamaño del texto
 - _**width**_: Ajustar la anchura de una foto
 - _**height**_: Ajustar la altura de una foto
-- _**background-color**_: 
-- _**font-family**_: 
+- _**background-color**_: Decidir el color de fondo
+- _**font-family**_: Decidir la fuente de letra
