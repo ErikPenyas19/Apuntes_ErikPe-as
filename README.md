@@ -120,16 +120,42 @@ Para poder modificar cómo deseamos debemos tener en cuenta la siguiente tabla:
 | *** | * | Selecciona **TODOS** los elementos |
 | *elemento<elemento2* | p<div | Selecciona los elementos _p_ que son hijos directos de un _div_ |
 
-## Atributos 
+## Estilos 
 
-- _**margin**_: Decidir el margen
-- _**padding**_: Decidir el relleno
-- _**text-align**_: Alinear el texto
-- _**text-justify**_: Justificar el texto
-- _**text-decoration**_: Decorar el texto
-- _**border-radius**_: Marcar las esquinas con curvas
-- _**size**_: Ajustar el tamaño del texto
-- _**width**_: Ajustar la anchura de una foto
-- _**height**_: Ajustar la altura de una foto
-- _**background-color**_: Decidir el color de fondo
-- _**font-family**_: Decidir la fuente de letra
+- _**margin**_: Decidir el margen. Al poner dicho atributo preguntará la medida deseada, si lo quiere a **50px**(pixeles), **20%**(porcentaje del espacio de la página web),...
+- _**padding**_: Decidir el relleno. Al poner dicho atributo preguntará la medida deseada, si lo quiere a **50px**(pixeles), **20%**(porcentaje del espacio de la página web)...
+- _**text-align**_: Alinear el texto. Preguntará si se desea alinear a la izquierda(_left_), a la derecha(_right_), al centro(_center_)
+- _**text-justify**_: Justificar el texto. 
+- _**text-decoration**_: Decorar el texto. Se puede decorar con un subrayado(_underline_), si quiere un color solido(_solido_), si se desea quitarle la decoración(_none_).
+- _**border-radius**_: Marcar las esquinas con curvas. Al poner dicho atributo preguntará la medida deseada, si lo quiere a **50px**(pixeles), **20%**(porcentaje del espacio de la página web)...
+- _**size**_: Ajustar el tamaño del texto. Al poner dicho atributo preguntará la medida deseada, si lo quiere a **50px**(pixeles), **20%**(porcentaje del espacio de la página web)...
+- _**width**_: Ajustar la anchura de una foto. Al poner dicho atributo preguntará la medida deseada, si lo quiere a **50px**(pixeles), **20%**(porcentaje del espacio de la página web)...
+- _**height**_: Ajustar la altura de una foto. Al poner dicho atributo preguntará la medida deseada, si lo quiere a **50px**(pixeles), **20%**(porcentaje del espacio de la página web)...
+- _**background-color**_: Decidir el color de fondo.
+- _**font-family**_: Decidir la fuente de letra.
+
+### En que se diferencia el "_rgb_" del "_rgba_"
+
+En rgb (_**Red, Green, Blue**_) te crea un color a partir de valores númericos de **rojo**, **verde** y **azul**. El valor máximo para cada color es de **255**.
+
+En cambio, _rgba_ tiene otro valor más llamado "_**Alpha**_", que es un valor (también númerico) que controla la **transparencia** del color.
+
+### Importar un tipo de fuente
+
+Por mucho que usemos "_font-family_" como atributo dentro de nuestro archivo CSS, el tipo de fuente de la letra la debe de traer desde una página web. En nuestro caso, escogemos _Google Fonts_ para elegir nuestro tipo de fuente.
+
+Cuando acabemos de elegir nos saldrán unas opciones a la derecha para poder copiar una espécie de URL dentro de un style.
+![Foto](https://user-images.githubusercontent.com/113420796/208863202-1c0cd39b-a0d1-4e41-8a88-172bbe481592.png)
+
+También deberemos deberemos copiar el atributo _font-family_ que nos dice:
+![image](https://user-images.githubusercontent.com/113420796/208864172-15423352-48aa-4e84-9427-60199215fd48.png)
+
+Entonces, dentro de nuestro archivo CSS debería quedar de esta manera:
+
+```
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+selector{
+    font-family: 'Titillium Web', sans-serif;
+}
+```
+"Selector" sería el selector al que le damos este estilo, este tipo de fuente.
