@@ -145,10 +145,14 @@ En cambio, _rgba_ tiene otro valor más llamado "_**Alpha**_", que es un valor (
 Por mucho que usemos "_font-family_" como atributo dentro de nuestro archivo CSS, el tipo de fuente de la letra la debe de traer desde una página web. En nuestro caso, escogemos _Google Fonts_ para elegir nuestro tipo de fuente.
 
 Cuando acabemos de elegir nos saldrán unas opciones a la derecha para poder copiar una espécie de URL dentro de un style.
+
 ![Foto](https://user-images.githubusercontent.com/113420796/208863202-1c0cd39b-a0d1-4e41-8a88-172bbe481592.png)
 
+
 También deberemos deberemos copiar el atributo _font-family_ que nos dice:
+
 ![image](https://user-images.githubusercontent.com/113420796/208864172-15423352-48aa-4e84-9427-60199215fd48.png)
+
 
 Entonces, dentro de nuestro archivo CSS debería quedar de esta manera:
 
@@ -158,4 +162,5 @@ selector{
     font-family: 'Titillium Web', sans-serif;
 }
 ```
+
 "Selector" sería el selector al que le damos este estilo, este tipo de fuente.
